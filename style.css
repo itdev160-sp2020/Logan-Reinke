@@ -1,0 +1,64 @@
+/* SIMPLE WEBSITE CSS - PROJECT 03 */
+body {
+    background-color: firebrick;
+    margin-top: 0px;
+    font-family: sans-serif;
+    color: rgb(221, 221, 221);
+}
+
+main{
+    background-color: darkred;
+}
+
+header{
+    background-color: rgb(221, 221, 221);
+    height: 10em;
+    padding-top: 3em;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, sans-serif;
+}
+
+nav{
+    background-color: rgb(92, 53, 53);
+    height:3em;
+    padding: 0.5em 0;
+}
+
+nav a, nav a:link {
+    font-size: 150%;
+    margin:  1em;
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    line-height: 2em;
+}
+
+nav a:visited {
+    color: rgb(221, 221, 221);
+}
+
+nav a:hover {
+    color: firebrick;
+    transform: color;
+    transition-duration: 0.5s;
+}
+
+section{
+    padding: 2em 3em;
+}
+
+article {
+
+}
+
+footer {
+    padding: 2em 3em;
+    background-color: rgb(92, 53, 53);
+}
