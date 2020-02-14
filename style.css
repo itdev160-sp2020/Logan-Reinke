@@ -1,25 +1,30 @@
 /* SIMPLE WEBSITE CSS - PROJECT 03 */
 body {
-    background-color: firebrick;
+    background-color: rgb(132, 34, 178);
     margin-top: 0px;
     font-family: sans-serif;
-    color: rgb(221, 221, 221);
+    color: rgb(235, 235, 235);
 }
 
 main{
-    background-color: darkred;
+    background-color: rgb(125, 119, 128);
 }
 
 header{
-    background-color: rgb(221, 221, 221);
-    height: 10em;
-    padding-top: 3em;
+    /*background-color: rgb(235, 235, 235);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    Height: 20em;
+    margin-top: -1.5em;
 }
 
 header h1 {
     text-align: center;
     font-family: Arial, sans-serif;
-    color: black;
+    color: rgb(235, 235, 235);
+    padding-top: 10%;
 }
 
 h1, h2, h3 {
@@ -27,38 +32,39 @@ h1, h2, h3 {
 }
 
 nav{
-    background-color: rgb(92, 53, 53);
+    background-color: rgb(57, 43, 63);
     height:3em;
     padding: 0.5em 0;
 }
 
-nav a, nav a:link {
+/****NAV BAR****/
+
+nav a:link,
+nav a:visited {
     font-size: 150%;
     margin:  1em;
-    color: rgb(221, 221, 221);
+    color: rgb(235, 235, 235);
     text-decoration: none;
     line-height: 2em;
+    padding-bottom: 0.1em;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.25s;
 }
 
-nav a:visited {
-    color: rgb(221, 221, 221);
-}
-
-nav a:hover {
-    color: firebrick;
-    transform: color;
-    transition-duration: 0.5s;
+nav a:hover,
+nav a:active {
+border-bottom: 2px solid #dda3ff;
+transform: border-bottom;
+transform-origin: bottom right;
+transition: transform .5s;
+padding-bottom: 0.1em;
 }
 
 section{
     padding: 2em 3em;
 }
 
-article {
-
-}
-
 footer {
     padding: 2em 3em;
-    background-color: rgb(92, 53, 53);
+    background-color: rgb(57, 43, 63);
 }
