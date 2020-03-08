@@ -1,0 +1,444 @@
+/*Colors: 
+
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #5f5f5f;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+.box {
+    padding: 1%;
+}
+
+/* --------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------- */
+
+header {
+    height: 100vh;
+}
+
+header.review-page {
+    height: auto;
+    width:auto;
+}
+.landing-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Bug_Tracker/Resources/images/Scarab_Header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-text-box{
+    width: 1140px;
+}
+
+.landing-page .hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box.reviews{
+    position: relative;
+    text-align: center;
+    top: -8%;
+    right: 5%;
+    letter-spacing: 8px;
+}
+
+/* --------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------- */
+
+section.section-features {
+    height: auto;
+}
+
+/* --------------------------------------------- */
+/* BUTTONS */
+/* --------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    border: 2px solid goldenrod;
+    padding: 10px 30px;
+    border-radius: 200px;
+    font-size: 110%;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    transition: background-color 0.2s, color 0.2s;
+    color: goldenrod;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: goldenrod;
+    color: rgb(230, 230, 230);
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: goldenrod;
+    transition: background-color 0.2s, color 0.2s;
+    color: rgb(230, 230, 230);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: rgb(190, 147, 35);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(190, 147, 35);
+}
+
+/* --------------------------------------------- */
+/* HEADINGS */
+/* --------------------------------------------- */
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    color:rgb(218, 218, 218);
+}
+
+h1 {
+    font-size: 350%;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 190%;
+    font-weight: 300;
+}
+
+h3#greetingTwo {
+    height: 100px;
+}
+
+
+/* --------------------------------------------- */
+/* NAV BAR */
+/* --------------------------------------------- */
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.review-page nav{
+    padding-bottom: 5px;
+    background-color: rgb(41, 41, 41);
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 110%;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: rgb(218, 218, 218);
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+    padding-bottom: 5px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px goldenrod solid;
+}
+
+nav h3{
+    color:white;
+}
+
+.logo-box h3 {
+    float:left;
+    transform: translate(25%, 210%);
+    letter-spacing: 5px;
+}
+
+/* --------------------------------------------- */
+/* SECTION - FEATURES */
+/* --------------------------------------------- */
+
+section.section-features{
+    padding-top: 15px;
+    padding-bottom:30px;
+}
+
+.icon-big {
+    color: goldenrod;
+    font-size: 250%;
+    padding-left: 43%;
+}
+
+section h2, h3 {
+    text-align:center;
+    color: rgb(41, 41, 41);
+}
+
+section h2 {
+    font-size: 300%;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding-bottom: 2%;
+}
+
+section h2:after {
+    display: block;
+    height: 2px;
+    background-color:goldenrod;
+    content: " ";
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+section h3 {
+    letter-spacing: 5px;
+    padding-bottom: 0.75%;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+p.features {
+    line-height: 150%;
+}
+
+p.long-copy {
+    padding-top:1%;
+    padding-bottom: 2%;
+    line-height: 142.50%;
+}
+/* --------------------------------------------- */
+/* SECTION - REVIEWS*/
+/* --------------------------------------------- */
+
+section.reviews {
+    padding-top: 20px;
+}
+
+.reviews p.long-copy {
+    padding-bottom: 5%;
+}
+
+.company-list {
+    width:auto;
+}
+
+.company-list ol {
+    counter-reset: li;
+    list-style: none;
+    list-style: decimal;
+    margin-bottom: 4em;
+    padding: 0;
+}
+
+.company-list li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: 1em 0;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    padding-left: 100px;
+    background-color: rgb(218, 218, 218);
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+.company-list li:hover {
+    background-color: goldenrod;
+}
+
+.company-list li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -.3959em;
+    left: -.25em;
+    background-color: goldenrod;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .35em solid rgb(218, 218, 218);;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    color: #fff;
+}
+
+
+/* --------------------------------------------- */
+/* SECTION - REVIEWS - SLIDER */
+/* --------------------------------------------- */
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: goldenrod;
+}
+
+blockquote {
+    padding: 2%;
+    margin-top: 8%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+cite {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+
+cite img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+
+cite img.flat-bottom{
+    width: auto;
+    height: 100%;
+}
+
+#slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 10px 10px goldenrod transparent;
+    transition: box-shadow 0.2s;
+}
+
+#slider:hover{
+    box-shadow: 0 4px 8px 0 rgba(218, 165, 32, 0.2);
+}
+
+#slider .slides{
+    display: block;
+    width: 6000px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 500px;
+    height: 300px;
+}
+
+li p {
+    display: inline-block;
+    transform:translate(40%, -150%);
+}
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
+
+footer {
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+.footer-nav {
+    float: left;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    float: right;
+    color:#5f5f5f;
+    transition: color .02s;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    color:#838383;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    color:#5f5f5f;
+    transition: color .02s;
+    padding-right: 20px;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#838383;
+}

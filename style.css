@@ -12,7 +12,7 @@ main{
 
 header{
     /*background-color: rgb(235, 235, 235);*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(flowers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/flowers.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -20,24 +20,50 @@ header{
     margin-top: -1.5em;
 }
 
+/* --------------------------------------------- */
+/* HEADINGS */
+/* --------------------------------------------- */
+
 header h1 {
     text-align: center;
     font-family: Arial, sans-serif;
     color: rgb(235, 235, 235);
     padding-top: 10%;
+    font-size: 300%;
 }
 
 h1, h2, h3 {
     font-family: Verdana, sans-serif;
 }
 
+h1 {
+    font-size: 240%;
+}
+
+h2 {
+    font-size: 180%;
+    color:rgb(235, 235, 235);
+}
+
+h3 {
+    font-size: 120%;
+    color: #dda3ff;
+}
+
+h4 {
+    font-size: 110%;
+    color:#dda3ff;
+}
+
+/* --------------------------------------------- */
+/* NAV BAR */
+/* --------------------------------------------- */
+
 nav{
     background-color: rgb(57, 43, 63);
     height:3em;
     padding: 0.5em 0;
 }
-
-/****NAV BAR****/
 
 nav a:link,
 nav a:visited {
@@ -60,9 +86,26 @@ transition: transform .5s;
 padding-bottom: 0.1em;
 }
 
+/* --------------------------------------------- */
+/* SECTION */
+/* --------------------------------------------- */
+
 section{
     padding: 2em 3em;
 }
+
+.long-copy {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+ol li {
+    line-height: 150%;
+}
+
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
 
 footer {
     padding: 2em 3em;
