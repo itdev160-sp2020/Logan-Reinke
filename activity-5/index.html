@@ -1,30 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+
     <meta charset="UTF-8">    <!------------------------------------------------------------>
-    <title>Template</title>   <!---Don't forget to rename this stuff for future projects---->
+    <title>The Best Atom Packages for Designers and Developers</title>   <!---Don't forget to rename this stuff for future projects---->
     <meta name ="description" content="Short description goes here">
     <meta name ="keywords" content="1, 2, 3, 4, 5, 6, 7, 8, 9, 10">
     <meta name ="viewport" content ="width=device-width, initial-scale =1.0">
     <link rel="icon" href="Images/icon.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/scripts.js"></script>
     
 </head>
 
 <body>
-    
     <header>
-        <h1>Hello World 2.0</h1>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <nav>
+                    <ul class="top-nav left">
+                        <a href="#"><li>Blogs</li></a>
+                        <a href="#"><li>Docs</li></a>
+                        <a href="#"><li>Partners</li></a>
+                        <a href="#"><li>Perks</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="top-nav right">
+                    <a href="#"><li>Login</li></a>
+                    <a href="#"><li>Join now</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Web Design & Development Blog</h1>
+            <img id="header-image" src="#" alt="header image">
+        </div>
+        <div class="row">
+            <div id="credits">
+                <div id="author">
+                    by Logan Reinke
+                </div>
+                <div id="date">
+                    11/11/2011
+                </div>
+            </div>
+        </div>
     </header>
-        
-    <nav>
-        <!------NAVIGATION GOES HERE---------->
-    </nav>
-    
-    <section>
-        <!------SECTION GOES HERE---------->
-    </section>
+    <div class="row">
+        <section class=" col span-3-of-4">
+            <div class="row package-container">
+                <h2 id="p1-name"></h2>
+                <p id="p1-description"></p>
+                <span id="p1-author"></span>
+                <span id="p1-downloads"></span>
+                <span id="p1-stars"></span>
+            </div>
+            <div class="row package-container">
+                <h2 id="p2-name"></h2>
+                <p id="p2-description"></p>
+                <span id="p2-author"></span>
+                <span id="p2-downloads"></span>
+                <span id="p2-stars"></span>
+            </div>
+            <div class="row package-container">
+                <h2 id="p3-name"></h2>
+                <p id="p3-description"></p>
+                <span id="p3-author"></span>
+                <span id="p3-downloads"></span>
+                <span id="p3-stars"></span>
+            </div>
+        </section>
+
+        <aside class="col span-1-of-4">
+            <div class="row">
+                <span class="icon ion-ios-search"></span>
+                <form action="#">
+                    <input type="search" id="gsearch" name="gsearch" placeholder="Search Articles">
+                </form>
+            </div>
+            <div class="row">
+                <div class="newsletter">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <h3>Let's grow your digital business</h3>
+                    <p>Some creatures of the Hive strain against the Will of Oryx. Alak-Hul the Darkblade is one such.</p>
+                    <form action="#">
+                        <input type="email" id="email" name="email" placeholder="email pls">
+                        <input type="submit" id="submit" name="submit" value="okie dokie">
+                    </form>
+                    <p>$100 USD monthly charge. Send a raven to unsubscribe.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="resources-title-textbox">
+                    <ion-icon name="book-outline"></ion-icon>
+                    <h5>Resources</h5>
+                </div>
+                <div class="article-unit">
+                    <a href="#">Web Design</a>
+                    <p>A short blurb about things</p>
+                </div>
+                <div class="article-unit">
+                    <a href="#">Web Design</a>
+                    <p>A short blurb about things</p>
+                </div>
+                <div class="article-unit">
+                    <a href="#">Web Design</a>
+                    <p>A short blurb about things</p>
+                </div>
+                <div class="article-unit">
+                    <a href="#">Web Design</a>
+                    <p>A short blurb about things</p>
+                </div>
+            </div>
+        </aside>
+    </div>
     
     <footer>
         <!------FOOTER GOES HERE---------->
@@ -37,6 +132,3 @@
 
 </html>
 
-/* --------------------------------------------- */
-/* BASIC SETUP */
-/* --------------------------------------------- */

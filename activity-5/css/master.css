@@ -1,0 +1,66 @@
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #5f5f5f;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------- */
+/* SECTION */
+/* --------------------------------------------- */
+
+section {
+    float:left;
+}
+
+/* --------------------------------------------- */
+/* ASIDE */
+/* --------------------------------------------- */
+
+aside {
+    float: right;
+    width: 100%;
+}
+
+span.icon {
+    float: left;
+    width: 10%;
+}
+
+form {
+    float: right;
+    width: 90%;
+}
+
+form input {
+    width: 100%;
+}
+
+.article-unit:after {
+    display: block;
+    height: 1px;
+    background-color:#585858;
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+    margin: 5% 0;
+}
