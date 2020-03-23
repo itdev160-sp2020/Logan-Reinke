@@ -11,12 +11,16 @@
 html,
 body {
     background-color: #fff;
-    color: #5f5f5f;
+    color: #000000;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 16px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+}
+
+body {
+    counter-reset: myCounter;
 }
 
 .row {
@@ -42,10 +46,24 @@ p {
 
 h1 {
     font-size: 300%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/working.jpg);
+    background-size: cover;
+    background-position-y: -150px;
+    padding: 5%;
+    color: rgb(230, 230, 230);
 }
 
 h2 {
+    font-size: 200%;
+}
 
+h2:before {
+    counter-increment: myCounter;
+    content: counter(myCounter) ". ";
+    position: relative;
+    height: 2em;
+    width: 2em;
+    color: #000000;
 }
 
 h3 {
@@ -72,6 +90,38 @@ h3 {
 
 section {
     float:left;
+}
+
+
+.package-container {
+    height: auto;
+    line-height: 150%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 6.75% 0;
+}
+
+.package-container-text {
+    transform:translate(0%, 75%);
+}
+
+.package-container.odd{
+    text-align: left;
+}
+
+.package-container.even {
+    text-align: right;
+}
+
+#p1-name,
+#p2-name,
+#p3-name {
+    line-height: 125%;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /* --------------------------------------------- */
