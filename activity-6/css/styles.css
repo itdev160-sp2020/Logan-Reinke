@@ -3,22 +3,52 @@
 /* --------------------------------------------- */
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    clear: both;
 }
 
-html,
+.in-message,
+.out-message {
+    border-radius: 200px;
+    width: auto;
+    clear:both;
+    max-width: 75%;
+    margin: 0 1% 5% 1%;
+    padding: 10px;
+}
+
+
+.in-message {
+    background-color: #e5e5ea;
+    text-align: left;
+    float: left;
+}
+
+.out-message {
+    background-color: #1789fe;
+    text-align: right;
+    color: rgb(231, 231, 231);
+    float: right;
+}
+
 body {
-background-color: #fff;
-color: #5f5f5f;
-font-family: 'Lato', 'Arial', sans-serif;
-font-weight: 300;
-font-size: 20px;
-text-rendering: optimizeLegibility;
-overflow-x: hidden;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-a {
-text-decoration: none;
+.messages {
+    margin-bottom: 20px;
+}
+
+body {
+    text-align: center;
+}
+
+
+
+main {
+    width: 75%;
+    background-color: rgb(199, 199, 199);
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    border-radius: 20px;
 }

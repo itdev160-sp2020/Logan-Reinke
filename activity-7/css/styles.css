@@ -1,0 +1,95 @@
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,
+body {
+background-color: #fff;
+color: #5f5f5f;
+font-family: 'Lato', 'Arial', sans-serif;
+font-weight: 300;
+font-size: 20px;
+text-rendering: optimizeLegibility;
+overflow-x: hidden;
+
+}
+
+a {
+text-decoration: none;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+    grid-row-start: 1;
+}
+
+h2:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+h2:not(first-child) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#completed-list {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#active-list {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+ul li {
+    color: green;
+}
+
+ol li {
+    color: red;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+ol {
+    counter-reset: term 0;
+}
+ol li:before{
+    counter-increment: term 1;
+    content: counter(term) ". ";
+}
+
+ul li:before {
+    content: '✓ ';
+}
+
+body {
+    text-align: center;
+}
+
+.delete {
+    border-style: none;
+    background-color: red;
+    color: white;
+    border-radius: 200px;
+    padding: 2px 5px;
+    margin-left: 2%;
+    cursor: pointer;
+}

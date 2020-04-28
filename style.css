@@ -12,7 +12,7 @@ main{
 
 header{
     /*background-color: rgb(235, 235, 235);*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/flowers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(flowers.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -61,7 +61,7 @@ h4 {
 
 nav{
     background-color: rgb(57, 43, 63);
-    height:3em;
+    height: auto;
     padding: 0.5em 0;
 }
 
