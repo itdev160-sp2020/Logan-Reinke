@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!------------------------------------------------------------>
+    <title>Blog App</title>
+    <!---Don't forget to rename this stuff for future projects---->
+    <meta name="description" content="Short description goes here">
+    <meta name="keywords" content="1, 2, 3, 4, 5, 6, 7, 8, 9, 10">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <link rel="icon" href="Images/icon.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header-title">Blog App</h1>
+        <div class="header-menu">
+            <button type="button" id="new-button">new</button>
+        </div>
+    </header>
+    <main>
+        <section id="display-content"></section>
+    </main>
+    <footer>
+        footer fill text
+    </footer>
+    <div class="modal" id="modal-dialog">
+        <section>
+            <h2>Title</h2>
+            <input type="text" id="edit-title-text">
+            <span id="edit-title-message"></span>
+        </section>
+        <section>
+            <h2>Content</h2>
+            <textarea id="edit-content-text"></textarea>
+            <span id="edit-content-message"></span>
+        </section>
+        <footer>
+            <button type="button" id="cancel-button">Cancel</button>
+            <button type="button" id="save-button">Save</button>
+        </footer>
+    </div>
+<div id="modal-backdrop"></div>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
